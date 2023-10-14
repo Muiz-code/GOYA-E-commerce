@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/5a214790e0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <title>E-Commerce</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    .nav1Text{
+        color: white;
+    }
+    .nav1Text a:hover {
+      color: rgb(113, 107, 107);
+    }
+    .nav1Text a i:hover {
+      color: rgb(113, 107, 107);
+    }
+    .dropdown:hover > .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown > .dropdown-toggle:active {
+      pointer-events: none;
+    }
+    
+.text1 {
+  display: inline-block;
+  position: relative;
+}
+
+.text1:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #494848d4;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.text1:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.text2 {
+  display: inline-block;
+  position: relative;
+}
+
+.text2:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(113, 107, 107);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.text2:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+    /* .text1 a:hover{
+      transition: 2s ease-in-out;
+      text-decoration: underline;
+    } */
+  </style>
+
+  <body>
+    <nav
+      class="text-light px-5 py-2 d-none d-lg-flex d-md-none"
+      style="background: rgb(49, 49, 49);"
+    >
+      <div
+        class="d-flex justify-content-around nav1Text"
+        style="font-size: 14px;"
+      >
+      <a href=""> <i class="fa-brands fa-facebook-f me-4 mt-1 nav1Text"></i></a>
+       <a href=""><i class="bi bi-twitter me-4 nav1Text"></i></a>
+        <a href=""> <i class="bi bi-instagram me-4 nav1Text"></i></a>
+       
+        <a
+          href="#"
+          class="text-decoration-none me-4 fw-lighter nav1Text"
+          >About Us</a
+        >
+        <a
+          href="#"
+          class="text-decoration-none me-4 fw-lighter nav1Text"
+          >Wishlist</a
+        >
+        <a
+          href="#"
+          class="text-decoration-none me-4 fw-lighter nav1Text"
+          >Contact</a
+        >
+      </div>
+      <div class="nav-item dropdown ms-auto">
+        <a
+          class="nav-link fw-lighter"
+          style="font-size: 14px;"
+          href="#"
+          role="button"
+          aria-expanded="false"
+        >
+          English
+          <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i>
+        </a>
+        <ul class="dropdown-menu me-3" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Français</a></li>
+          <li><a class="dropdown-item" href="#">Deutsch</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar d-flex bg-light">
+  <div class="container-fluid">
+       <button
+              class="navbar-toggler ms-4"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon toggler">
+            </button>
+            
+            <div
+              class="offcanvas offcanvas-start togglerBg w-100 ps-0 ps-md-0"
+              tabindex="-1"
+              id="offcanvasNavbar"
+            >
+              <div class="offcanvas-header">
+                <h5
+                  class="offcanvas-title fs-5 fw-bolder"
+                  id="offcanvasNavbarLabel"
+                >
+                  <img src="/asset/image (1).webp" class="image me-4" alt="" />
+                  Lotus Beta Analytics
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active fs-1 fw-bolder"
+                      aria-current="page"
+                      href="#home"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link fs-1 fw-bolder icons"
+                      style="--bs-link-hover-color-rgb: 25, 135, 84;"
+                      href="#about"
+                      >About<i class="bi bi-plus"></i
+                    ></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-1 fw-bolder" href="#service">
+                      Service <i class="bi bi-plus"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-1 fw-bolder" href="#contact">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+<div class=" me-auto">
+<a class="text-dark ms-4 me-3 text1 fw-lighter" style="font-size: 15px;"  type="button" data-bs-toggle="offcanvas"  data-bs-target="#mainoffcanvasScrolling" aria-controls="offcanvasTop">Main</a>
+<!-- Main Container -->
+<div class="offcanvas offcanvas-top" style="margin-top: 6rem; height: 70vh;" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="mainoffcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex">
+    <ul class="col d-flex flex-column" style="line-height: 40px; color: rgb(113, 107, 107);">
+      <h1 class="text fw-lighter mt-5" style="font-size: 20px;">Head Style</h1>
+      <li class="text2" style="width: 40%;">v1 – Classic</li>
+      <li class="text2" style="width: 70%;">v2 – Full Screen Slider</li>
+      <li class="text2" style="width: 60%;">v3 – New Season</li>
+      <li class="text2" style="width: 65%;">v4 – Product Landing</li>
+      <li class="text2" style="width: 60%;">v5 – Featured Video</li>
+    </ul>
+    <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+      <h1 class="text fw-lighter mt-5" style="font-size: 20px;">GLOBAL OPTIONS</h1>
+      <li class="text2" style="width: 70%;">Page Load Transition</li>
+      <li class="text2" style="width: 40%;">Modal Popup</li>
+      <li class="text2" style="width: 68%;">Campaign Bar <span class="bg-black rounded-1 text-light p-1" style="font-size: 10px;">Featured</span></li>
+      <li class="text2" style="width: 60%;">Top Bar – Disabled</li>
+      <li class="text2" style="width: 70%;">Header – Regular Width</li>
+      <li class="text2" style="width: 78%;">Mobile/Full Menu – Dark</li>
+    </ul>
+    <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+      <h1 class="text fw-lighter mt-5" style="font-size: 20px;">HEADER LAYOUTS</h1>
+      <li class="text2" style="width: 30%;">Header v1</li>
+      <li class="text2" style="width: 30%;">Header v2</li>
+      <li class="text2" style="width: 30%;">Header v3</li>
+      <li class="text2" style="width: 30%;">Header v4</li>
+      <li class="text2" style="width: 30%;">Header v5</li>
+      <li class="text2" style="width: 30%;">Header v6</li>
+      <li class="text2" style="width: 30%;">Header v7</li>
+      <li class="text2" style="width: 30%;">Header v8</li>
+      <li class="text2" style="width: 30%;">Header v9</li>
+    </ul>
+
+   <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+      <h1 class="text fw-lighter mt-5" style="font-size: 20px;">OTHER DEMOS</h1>
+      <li class="text2 mt-3" style="width: 0%;"><img src="/Asset/Screenshot 2023-10-14 at 6.06.18 PM.jpeg" style="width: 200px;" alt=""></li>
+      <li class="text2" style="width: 80%;">Decoration <span class="rounded-1 text-light p-1" style="background-color: rgb(194, 133, 18); font-size: 10px;">Demo</span></li>
+    </ul>
+    
+    <ul class="col d-flex flex-column">
+      <!-- <li></li> -->
+    </ul>
+    
+  </div>
+</div>
+
+<!-- Shop Container -->
+<a class="text-dark me-3 text1 fw-lighter" style="font-size: 15px;" type="button" data-bs-toggle="offcanvas"  data-bs-target="#shopoffcanvasScrolling" aria-controls="offcanvasTop">Shop</a>
+
+<div class="offcanvas offcanvas-top" style="margin-top: 6rem; height: 70vh;" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="shopoffcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex">
+    <ul class="col d-flex flex-column" style="line-height: 40px; color: rgb(141, 141, 141);">
+      <h1 class="text fw-lighter mt-5" style="font-size: 20px;">CATALOG</h1>
+      <li class="text2" style="width: 40%;">Style 1 <span class="rounded-1 text-light p-1" style="font-size: 10px; background: rgb(133, 133, 133);">Default</span></li>
+      <li class="text2" style="width: 20%;">Style 2</li>
+      <li class="text2" style="width: 20%;">Style 3</li>
+      <li class="text2" style="width: 20%;">Style 4</li>
+      <h1 class="text fw-lighter mt-5" style="font-size: 20px;">FILTERS</h1>
+      <li class="text2" style="width: 15%;">Top</li>
+      <li class="text2" style="width: 20%;">Sidebar</li>
+      <li class="text2" style="width: 50%;">Slide Out <span class="rounded-1 text-light p-1" style="font-size: 10px; background: rgb(133, 133, 133);">Default</span></li>
+
+    </ul>
+    <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+      <h1 class="text fw-lighter mt-5" style="font-size: 20px;">CATALOG OPTIONS</h1>
+      <li class="text2" style="width: 80%;">Darker Background <span class="bg-black rounded-1 text-light p-1" style="font-size: 10px;">Featured</span></li>
+      <li class="text2" style="width: 50%;">Width – Regular</li>
+      <li class="text2" style="width: 70%;">Animation – Zoom Only</li>
+      <li class="text2" style="width: 60%;">Load More – Scroll</li>
+      <h1 class="text fw-lighter mt-5" style="font-size: 20px;">SHOP PAGES</h1>
+      <li class="text2" style="width: 60%;">My account – 1 Col</li>
+      <li class="text2" style="width: 25%;">Wishlist</li>
+    </ul>
+    <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+      <h1 class="text fw-lighter mt-5" style="font-size: 20px;">CART</h1>
+      <li class="text2" style="width: 45%;">Shopping Cart</li>
+      <h1 class="text fw-lighter mt-5" style="font-size: 20px;">MINICART</h1>
+      <li class="text2" style="width: 10%;">Top</li>
+      <li class="text2" style="width: 12%;">Side</li>
+      <li class="text2" style="width: 12%;">Dark</li>
+    </ul>
+
+   <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+      <h1 class="text fw-lighter mt-5" style="font-size: 20px;">CHECKOUT</h1>
+      <li class="text2" style="width: 45%;">Modern <span class="bg-black rounded-1 text-light p-1" style="font-size: 10px;">Featured</span></li>
+      <li class="text2" style="width: 53%;">Multi Step <span class="rounded-1 text-light p-1" style="background-color: rgb(194, 133, 18); font-size: 10px;">Featured</span></li>
+      <li class="text2" style="width: 20%;">Classic</li>
+    </ul>
+    
+    <ul class="col d-flex flex-column">
+      <!-- <li></li> -->
+    </ul>
+    
+  </div>
+</div>
+
+<!-- Product Container -->
+<a class="text-dark me-3 text1 fw-lighter" style="font-size: 15px;" type="button" data-bs-toggle="offcanvas"  data-bs-target="#productoffcanvasScrolling" aria-controls="offcanvasTop">Product</a>
+
+<div class="offcanvas offcanvas-top" style="margin-top: 6rem; height: 50vh;" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="productoffcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex">
+    <ul class="col d-flex flex-column" style="line-height: 40px; color: rgb(113, 107, 107);">
+      <h1 class="text fw-lighter mt-5" style="font-size: 20px;">PRODUCT TYPES</h1>
+      <li class="text2" style="width: 20%;">Simple</li>
+      <li class="text2" style="width: 20%;">Variable</li>
+      <li class="text2" style="width: 20%;">External</li>
+      <li class="text2" style="width: 20%;">External</li>
+    </ul>
+    <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+      <h1 class="text fw-lighter mt-5" style="font-size: 20px;">PRODUCT STYLE</h1>
+      <li class="text2" style="width: 70%;">Showcase Style <span class="bg-black rounded-1 text-light p-1" style="font-size: 10px;">Featured</span></li>
+      <li class="text2" style="width: 60%;">Background – Light</li>
+      <li class="text2" style="width: 60%;">Background – Dark </li>
+      <li class="text2" style="width: 30%;">Full Width</li>
+      <li class="text2" style="width: 70%;">Header – Regular Width</li>
+      <li class="text2" style="width: 35%;">No Padding</li>
+    </ul>
+    <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+      <h1 class="text fw-lighter mt-5" style="font-size: 20px;">PRODUCT GALLERY</h1>
+      <li class="text2" style="width: 30%;">Carousel</li>
+      <li class="text2" style="width: 45%;">Single Column</li>
+      <li class="text2" style="width: 15%;">Grid</li>
+      <li class="text2" style="width: 40%;">Image Zoom</li>
+    </ul>
+    <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+      <h1 class="text fw-lighter mt-5" style="font-size: 20px;">PRODUCT DETAILS</h1>
+      <li class="text2" style="width: 13%;">Tabs</li>
+      <li class="text2" style="width: 30%;">Accordion</li>
+      <li class="text2" style="width: 43%;">Vertical <span class="rounded-1 text-light p-1" style="font-size: 10px; background: rgb(133, 133, 133);">Default</span></li>
+      <li class="text2" style="width: 87%;">Extended Description <span class="bg-black rounded-1 text-light p-1" style="font-size: 10px;">Featured</span></li>
+    </ul>
+
+    
+    <ul class="col d-flex flex-column">
+      <!-- <li></li> -->
+    </ul>
+    
+  </div>
+</div>
+
+<!-- Pages Container -->
+<a class="text-dark me-3 text1 fw-lighter" style="font-size: 15px;" type="button" data-bs-toggle="offcanvas"  data-bs-target="#pagesoffcanvasScrolling" aria-controls="offcanvasTop">Pages</a>
+
+<div class="offcanvas offcanvas-top" style="margin-top: 6rem; height: 55vh;" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="pagesoffcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex">
+    <ul class="col d-flex flex-column" style="line-height: 40px; color: rgb(113, 107, 107);">
+      <h1 class="text fw-lighter mt-5" style="font-size: 20px;">SAMPLE PAGES</h1>
+      <li class="text2" style="width: 30%;">About Us</li>
+      <li class="text2" style="width: 68%;">Store Locations <span class="rounded-1 text-light p-1" style="font-size: 10px; background-color: rgb(113, 107, 107);">Featured</span></li>
+      <li class="text2" style="width: 20%;">Contact</li>
+      <li class="text2" style="width: 15%;">FAQ’s</li>
+      <li class="text2" style="width: 22%;">Careers</li>
+    </ul>
+    <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+      <h1 class="text fw-lighter mt-5" style="font-size: 20px;">LOOKBOOK</h1>
+      <li class="text2" style="width: 30%;">List <span class="rounded-1 text-light p-1" style="font-size: 10px; background-color: rgb(113, 107, 107);">Default</span></li>
+      <li class="text2" style="width: 15%;">Grid</li>
+      <li class="text2" style="width: 24%;">Masonry</li>
+    </ul>
+    <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+      <h1 class="text fw-lighter mt-5" style="font-size: 20px;">LOOKBOOK SINGLE</h1>
+      <li class="text2" style="width: 70%;">Parallax Header <span class="bg-black rounded-1 text-light p-1" style="font-size: 10px;">Featured</span></li>
+      <li class="text2" style="width: 50%;">Featured Slider</li>
+      <li class="text2" style="width: 40%;">Regular Title</li>
+      <li class="text2" style="width: 60%;">Background Color</li>
+      <li class="text2" style="width: 76%;">Spring Blossom <span class="rounded-1 text-light p-1" style="font-size: 10px; background-color: rgb(113, 107, 107);">Page Builder</span></li>
+      <li class="text2" style="width: 70%;">Natural Colors <span class="rounded-1 text-light p-1" style="font-size: 10px; background-color: rgb(113, 107, 107);">Page Builder</span></li>
+    </ul>
+
+   <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+      </ul>
+    
+    <ul class="col d-flex flex-column">
+      <!-- <li></li> -->
+    </ul>
+    
+  </div>
+</div>
+
+<!-- journal Container -->
+<a class="text-dark me-4 text1 fw-lighter" style="font-size: 15px;" type="button" data-bs-toggle="offcanvas"  data-bs-target="#journaloffcanvasScrolling" aria-controls="offcanvasTop">Journal</a>
+
+<div class="offcanvas offcanvas-top" style="margin-top: 6rem; height: 70vh;" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="journaloffcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex">
+    <ul class="col d-flex flex-column" style="line-height: 40px; color: rgb(113, 107, 107);">
+      <h1 class="text fw-lighter mt-5" style="font-size: 20px;">LISTING</h1>
+      <li class="text2" style="width: 40%;">Classic <span class="rounded-1 text-light p-1" style="font-size: 10px; background-color: rgb(113, 107, 107);">Default</span></li>
+      <li class="text2" style="width: 20%;">Overlay</li>
+      <li class="text2" style="width: 24%;">Masonry</li>
+      <li class="text2" style="width: 15%;">Cards</li>
+      <li class="text2" style="width: 15%;">Grid</li>
+      <li class="text2" style="width: 15%;">List</li>
+      <li class="text2" style="width: 45%;">Blog + Sidebar</li>
+    </ul>
+    <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+      <h1 class="text fw-lighter mt-5" style="font-size: 20px;">SINGLE POST</h1>
+      <li class="text2" style="width: 50%;">Display Featured</li>
+      <li class="text2" style="width: 75%;">Featured Parallax <span class="bg-black rounded-1 text-light p-1" style="font-size: 10px;">Featured</span></li>
+      <li class="text2" style="width: 45%;">Slider Gallery</li>
+      <li class="text2" style="width: 45%;">Featured Video</li>
+      <li class="text2" style="width: 40%;">No Featured</li>
+    </ul>
+    <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+      <h1 class="text fw-lighter mt-5" style="font-size: 20px;">NAVIGATION</h1>
+      <li class="text2" style="width: 20%;">Simple</li>
+      <li class="text2" style="width: 55%;">Image Background</li>
+    </ul>
+
+   <ul class="col d-flex flex-column">
+     
+  </ul>
+    
+    <ul class="col d-flex flex-column">
+      <!-- <li></li> -->
+    </ul>
+    
+  </div>
+</div>
+
+
+
+
+
+</div>
+</div>
+
+  </div>
+</nav>
+    <div></div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
+  ></script>
+</html>
