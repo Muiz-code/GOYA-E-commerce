@@ -38,6 +38,7 @@
   </head>
 
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gabarito:wght@800&family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
     * {
       margin: 0px;
       padding: 0px;
@@ -105,15 +106,18 @@
   transform-origin: bottom left;
 }
 
-    /* .text1 a:hover{
-      transition: 2s ease-in-out;
-      text-decoration: underline;
-    } */
+.butn button:hover{
+  transition: 2s ease-in-out;
+  transform: scale(1.1);
+}
+
+
   </style>
 
   <body>
+    <!-- Navbar 1 -->
     <nav
-      class="text-light px-5 py-2 d-none d-lg-flex d-md-none"
+      class="text-light px-5 py-2 d-none d-lg-flex d-md-none overflow-hidden"
       style="background: rgb(49, 49, 49);"
     >
       <div
@@ -151,16 +155,18 @@
           English
           <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i>
         </a>
-        <ul class="dropdown-menu me-3" aria-labelledby="dropdownMenuButton">
+        <ul class="dropdown-menu me-3 bg-black" aria-labelledby="dropdownMenuButton">
           <li><a class="dropdown-item" href="#">Français</a></li>
           <li><a class="dropdown-item" href="#">Deutsch</a></li>
         </ul>
       </div>
     </nav>
-    <nav class="navbar d-flex bg-light">
-  <div class="container-fluid">
+
+    <!-- Nasvbar 2 -->
+    <nav class="navbar d-flex sticky-lg-top py-3" style=" background: white;">
+  <div class="container-fluid px-4">
        <button
-              class="navbar-toggler ms-4"
+              class="navbar-toggler"
               type="button"
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasNavbar"
@@ -220,7 +226,7 @@
               </div>
             </div>
 
-<div class=" me-auto">
+<div class=" me-auto d-none d-md-block">
 <a class="text-dark ms-4 me-3 text1 fw-lighter" style="font-size: 15px;"  type="button" data-bs-toggle="offcanvas"  data-bs-target="#mainoffcanvasScrolling" aria-controls="offcanvasTop">Main</a>
 <!-- Main Container -->
 <div class="offcanvas offcanvas-top" style="margin-top: 6rem; height: 70vh;" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="mainoffcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
@@ -414,7 +420,7 @@
 </div>
 
 <!-- journal Container -->
-<a class="text-dark me-4 text1 fw-lighter" style="font-size: 15px;" type="button" data-bs-toggle="offcanvas"  data-bs-target="#journaloffcanvasScrolling" aria-controls="offcanvasTop">Journal</a>
+<a class="text-dark text1 fw-lighter" style="font-size: 15px;" type="button" data-bs-toggle="offcanvas"  data-bs-target="#journaloffcanvasScrolling" aria-controls="offcanvasTop">Journal</a>
 
 <div class="offcanvas offcanvas-top" style="margin-top: 6rem; height: 70vh;" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="journaloffcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
   <div class="offcanvas-header">
@@ -455,17 +461,132 @@
     
   </div>
 </div>
-
-
-
-
-
-</div>
 </div>
 
+<!-- Logo container -->
+<div class="me-auto">
+  <h1  style="font-family: 'Dancing Script', cursive; color: black; margin-right: 10rem;">Nidle</h1>
+</div>
+
+<!-- login,search,cart -->
+<div>
+  <a href="#" class="text-black">Login</a>
+  <a class="text-dark fw-lighter" style="font-size: 15px;"  type="button" data-bs-toggle="offcanvas"  data-bs-target="#searchoffcanvasScrolling" aria-controls="offcanvasTop"><i class="bi bi-search ms-2 fs-5 text-black"></i></a>
+  <a href="#"><i class="bi bi-heart ms-2 fs-5 text-black"></i></a>
+  <a href="#"><i class="bi bi-bag ms-2 fs-5 text-black"></i></a>
+
+  <!-- search Container -->
+<div class="offcanvas offcanvas-top" style="padding: 0rem 35rem 0rem 35rem; height: 30vh;" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="searchoffcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
+  <div class="offcanvas-body d-flex">
+      <form action="#" class="col d-flex flex-column justify-content-center align-content-center" style="line-height: 40px; color: rgb(113, 107, 107);">
+        <div class="input-group">
+  <div class="form-outline">
+    <input type="search" id="form1" class="form-control" />
+    <label class="form-label" for="form1">Search</label>
+  </div>
+  <button type="button" class="btn btn-primary">
+    <i class="fas fa-search"></i>
+  </button>
+</div>
+      </form>
+  </div>
+</div>
+
+</div>
+
+</div>
 </nav>
-    <div></div>
+
+<!-- Carosel Container -->
+    <section>
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner image2" style="height: 70vh;">
+    <div class="carousel-item active" data-bs-interval="4000">
+      <img src="/asset/pexels-wilson-vitorino-2076966 2.jpg" class="d-block w-100 img-fluid" alt="...">
+       <div class="carousel-caption d-flex align-text-top d-none d-md-block butn">
+        <p class="mt-5" style="margin-right: 57em; width: 15%; border-radius: 5px; background: none; border: none; color: rgb(192, 185, 185); background-color: rgb(50, 28, 28);">Spring/Summer'19</p>
+        <h5 style="margin-bottom: rem; margin-right: 50em; font-size: 90px; color: rgb(36, 17, 17);">Paris Fabric</h5>
+       <button class="p-2 rounded-1" style="margin-bottom: 10rem; margin-right: 57em; background: none; border: none; color: rgb(192, 185, 185); background-color: rgb(50, 28, 28);">Shop Now</button>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="/asset/pexels-the-lazy-artist-gallery-1300550.jpg" class="d-block w-100 img-fluid" alt="...">
+     <div class="carousel-caption d-flex align-text-top d-none d-md-block text-black butn">
+      <p class="mt-5" style="margin-right: 57em; width: 8%; border-radius: 5px; background: none; border: none; color: rgb(192, 185, 185); background-color: rgb(50, 28, 28);">Winter'19</p>
+       <h5 style=" margin-right: 50em; font-size: 90px; color: rgb(0, 0, 0);">Men Suits</h5>
+       <button class="p-2 rounded-1" style="margin-bottom: 10rem; margin-right: 57em; background: none; border: none; color: rgb(192, 185, 185); background-color: rgb(50, 28, 28);">Shop Now</button>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="/asset/pexels-dids-1424537.jpg" class="d-block w-100 img-fluid" alt="...">
+       <div class="carousel-caption d-flex align-text-top d-none d-md-block text-black butn">
+        <p class="mt-5" style="margin-right: 57em; width: 8%; border-radius: 5px; background: none; border: none; color: rgb(192, 185, 185); background-color: rgb(50, 28, 28);">summer'19</p>
+       <h5 style=" margin-right: 50em; font-size: 90px; color: rgb(0, 0, 0);">Shoes</h5>
+       <button class="p-2 rounded-1" style="margin-bottom: 13rem; margin-right: 57em; background: none; border: none; color: rgb(192, 185, 185); background-color: rgb(50, 28, 28);">Shop Now</button>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="/Asset/pexels-lumn-167686 2.jpg" class="d-block w-100 img-fluid" alt="...">
+       <div class="carousel-caption d-flex align-text-top d-none d-md-block text-black butn">
+        <p class="mt-5" style="margin-left: 57em; width: 8%; border-radius: 5px; background: none; border: none; color: rgb(192, 185, 185); background-color: rgb(50, 28, 28);">50% off</p>
+       <h5 style=" margin-left: 6em; font-size: 90px; color: rgb(36, 17, 17);">Accessories</h5>
+       <button class="p-2 rounded-1" style="margin-bottom: 13rem; margin-left: 57em; background: none; border: none; color: rgb(192, 185, 185); background-color: rgb(50, 28, 28);">Shop Now</button>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+      </div>
+        </div>
+</section>
+
+<!-- Product Showcase1 -->
+
+<section>
+<div class="col justify-content-center align-content-center align-items-center">
+<div class="container d-lg-flex d-md-block  p-5">
+  <div class="col me-3 bg-image hover-zoom">
+    <img src="/Asset/pexels-luiz-gustavo-miertschink-1877736.jpg" class="w-100 img-fluid" alt="">
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0)">
+      <div class="d-flex flex-column justify-content-center align-items-center h-100">
+        <h1 class="text-white mb-2 fw-light">Jump Suit</h1>
+        <button class="btn btn-light p-3 fw-light">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col me-3 bg-image hover-zoom">
+    <img src="/Asset/FLYDAY Hi Relax Shirt.jpeg" class="w-100 img-fluid" alt="">
+   <div class="mask" style="background-color: rgba(0, 0, 0, 0)">
+      <div class="d-flex flex-column justify-content-center align-items-center h-100">
+        <h1 class="text-white mb-2 fw-light" style="color: rgb(86, 137, 86);">Relax Shirt</h1>
+        <button class="btn btn-light p-3 fw-light">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col me-3">
+    <div class=" h-100" style="background-color: rgb(199, 165, 85)">
+      <div class="d-flex flex-column justify-content-center align-items-center h-100">
+        <h1 class="text-white mb-4 fw-light">Clearance Sales</h1>
+        <p class="text-white mb-5 fw-lighter">Up to 70% Off & Free Shipping</p>
+        <button class="btn btn-light p-3 fw-light">Browse Sale</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
