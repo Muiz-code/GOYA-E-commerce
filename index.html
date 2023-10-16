@@ -38,6 +38,7 @@
   </head>
 
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gabarito:wght@800&family=Open+Sans:wght@300;400&family=Roboto:wght@300&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gabarito:wght@800&family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
     * {
       margin: 0px;
@@ -84,7 +85,7 @@
   transform-origin: bottom left;
 }
 .text2 {
-  display: inline-block;
+  display: inline-bloc;
   position: relative;
 }
 
@@ -111,7 +112,20 @@
   transform: scale(1.1);
 }
 
-
+.overlayIcon button{
+  background-color: #ffffff82;
+  border-radius: 5rem;
+}
+  .overlayIcon button:hover{
+    color: #8d8d8d;
+    background-color: white;
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+  }
+  .overlayIcon2 button:hover{
+    color: #8d8d8d;
+   
+  }
   </style>
 
   <body>
@@ -234,7 +248,7 @@
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body d-flex">
-    <ul class="col d-flex flex-column" style="line-height: 40px; color: rgb(113, 107, 107);">
+    <ul class="col d-flex flex-column list-unstyled" style="line-height: 40px; color: rgb(113, 107, 107);">
       <h1 class="text fw-lighter mt-5" style="font-size: 20px;">Head Style</h1>
       <li class="text2" style="width: 40%;">v1 – Classic</li>
       <li class="text2" style="width: 70%;">v2 – Full Screen Slider</li>
@@ -242,7 +256,7 @@
       <li class="text2" style="width: 65%;">v4 – Product Landing</li>
       <li class="text2" style="width: 60%;">v5 – Featured Video</li>
     </ul>
-    <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+    <ul class="col d-flex flex-column list-unstyled" style="line-height: 40px; color: rgb(113, 107, 107);">
       <h1 class="text fw-lighter mt-5" style="font-size: 20px;">GLOBAL OPTIONS</h1>
       <li class="text2" style="width: 70%;">Page Load Transition</li>
       <li class="text2" style="width: 40%;">Modal Popup</li>
@@ -251,7 +265,7 @@
       <li class="text2" style="width: 70%;">Header – Regular Width</li>
       <li class="text2" style="width: 78%;">Mobile/Full Menu – Dark</li>
     </ul>
-    <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+    <ul class="col d-flex flex-column list-unstyled" style="line-height: 40px; color: rgb(113, 107, 107);">
       <h1 class="text fw-lighter mt-5" style="font-size: 20px;">HEADER LAYOUTS</h1>
       <li class="text2" style="width: 30%;">Header v1</li>
       <li class="text2" style="width: 30%;">Header v2</li>
@@ -264,13 +278,13 @@
       <li class="text2" style="width: 30%;">Header v9</li>
     </ul>
 
-   <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+   <ul class="col d-flex flex-column list-unstyled" style="line-height: 40px; color: rgb(113, 107, 107);">
       <h1 class="text fw-lighter mt-5" style="font-size: 20px;">OTHER DEMOS</h1>
       <li class="text2 mt-3" style="width: 0%;"><img src="/Asset/Screenshot 2023-10-14 at 6.06.18 PM.jpeg" style="width: 200px;" alt=""></li>
       <li class="text2" style="width: 80%;">Decoration <span class="rounded-1 text-light p-1" style="background-color: rgb(194, 133, 18); font-size: 10px;">Demo</span></li>
     </ul>
     
-    <ul class="col d-flex flex-column">
+    <ul class="col d-flex flex-column list-unstyled">
       <!-- <li></li> -->
     </ul>
     
@@ -285,7 +299,7 @@
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body d-flex">
-    <ul class="col d-flex flex-column" style="line-height: 40px; color: rgb(141, 141, 141);">
+    <ul class="col d-flex flex-column list-unstyled" style="line-height: 40px; color: rgb(141, 141, 141);">
       <h1 class="text fw-lighter mt-5" style="font-size: 20px;">CATALOG</h1>
       <li class="text2" style="width: 40%;">Style 1 <span class="rounded-1 text-light p-1" style="font-size: 10px; background: rgb(133, 133, 133);">Default</span></li>
       <li class="text2" style="width: 20%;">Style 2</li>
@@ -297,7 +311,7 @@
       <li class="text2" style="width: 50%;">Slide Out <span class="rounded-1 text-light p-1" style="font-size: 10px; background: rgb(133, 133, 133);">Default</span></li>
 
     </ul>
-    <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+    <ul class="col d-flex flex-column list-unstyled " style="line-height: 40px; color: rgb(113, 107, 107);">
       <h1 class="text fw-lighter mt-5" style="font-size: 20px;">CATALOG OPTIONS</h1>
       <li class="text2" style="width: 80%;">Darker Background <span class="bg-black rounded-1 text-light p-1" style="font-size: 10px;">Featured</span></li>
       <li class="text2" style="width: 50%;">Width – Regular</li>
@@ -307,7 +321,7 @@
       <li class="text2" style="width: 60%;">My account – 1 Col</li>
       <li class="text2" style="width: 25%;">Wishlist</li>
     </ul>
-    <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+    <ul class="col d-flex flex-column list-unstyled " style="line-height: 40px; color: rgb(113, 107, 107);">
       <h1 class="text fw-lighter mt-5" style="font-size: 20px;">CART</h1>
       <li class="text2" style="width: 45%;">Shopping Cart</li>
       <h1 class="text fw-lighter mt-5" style="font-size: 20px;">MINICART</h1>
@@ -316,14 +330,14 @@
       <li class="text2" style="width: 12%;">Dark</li>
     </ul>
 
-   <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+   <ul class="col d-flex flex-column list-unstyled " style="line-height: 40px; color: rgb(113, 107, 107);">
       <h1 class="text fw-lighter mt-5" style="font-size: 20px;">CHECKOUT</h1>
       <li class="text2" style="width: 45%;">Modern <span class="bg-black rounded-1 text-light p-1" style="font-size: 10px;">Featured</span></li>
       <li class="text2" style="width: 53%;">Multi Step <span class="rounded-1 text-light p-1" style="background-color: rgb(194, 133, 18); font-size: 10px;">Featured</span></li>
       <li class="text2" style="width: 20%;">Classic</li>
     </ul>
     
-    <ul class="col d-flex flex-column">
+    <ul class="col d-flex flex-column list-unstyled">
       <!-- <li></li> -->
     </ul>
     
@@ -338,14 +352,14 @@
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body d-flex">
-    <ul class="col d-flex flex-column" style="line-height: 40px; color: rgb(113, 107, 107);">
+    <ul class="col d-flex flex-column list-unstyled" style="line-height: 40px; color: rgb(113, 107, 107);">
       <h1 class="text fw-lighter mt-5" style="font-size: 20px;">PRODUCT TYPES</h1>
       <li class="text2" style="width: 20%;">Simple</li>
       <li class="text2" style="width: 20%;">Variable</li>
       <li class="text2" style="width: 20%;">External</li>
       <li class="text2" style="width: 20%;">External</li>
     </ul>
-    <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+    <ul class="col d-flex flex-column list-unstyled " style="line-height: 40px; color: rgb(113, 107, 107);">
       <h1 class="text fw-lighter mt-5" style="font-size: 20px;">PRODUCT STYLE</h1>
       <li class="text2" style="width: 70%;">Showcase Style <span class="bg-black rounded-1 text-light p-1" style="font-size: 10px;">Featured</span></li>
       <li class="text2" style="width: 60%;">Background – Light</li>
@@ -354,14 +368,14 @@
       <li class="text2" style="width: 70%;">Header – Regular Width</li>
       <li class="text2" style="width: 35%;">No Padding</li>
     </ul>
-    <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+    <ul class="col d-flex flex-column list-unstyled " style="line-height: 40px; color: rgb(113, 107, 107);">
       <h1 class="text fw-lighter mt-5" style="font-size: 20px;">PRODUCT GALLERY</h1>
       <li class="text2" style="width: 30%;">Carousel</li>
       <li class="text2" style="width: 45%;">Single Column</li>
       <li class="text2" style="width: 15%;">Grid</li>
       <li class="text2" style="width: 40%;">Image Zoom</li>
     </ul>
-    <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+    <ul class="col d-flex flex-column list-unstyled " style="line-height: 40px; color: rgb(113, 107, 107);">
       <h1 class="text fw-lighter mt-5" style="font-size: 20px;">PRODUCT DETAILS</h1>
       <li class="text2" style="width: 13%;">Tabs</li>
       <li class="text2" style="width: 30%;">Accordion</li>
@@ -370,7 +384,7 @@
     </ul>
 
     
-    <ul class="col d-flex flex-column">
+    <ul class="col d-flex flex-column list-unstyled">
       <!-- <li></li> -->
     </ul>
     
@@ -385,7 +399,7 @@
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body d-flex">
-    <ul class="col d-flex flex-column" style="line-height: 40px; color: rgb(113, 107, 107);">
+    <ul class="col d-flex flex-column list-unstyled" style="line-height: 40px; color: rgb(113, 107, 107);">
       <h1 class="text fw-lighter mt-5" style="font-size: 20px;">SAMPLE PAGES</h1>
       <li class="text2" style="width: 30%;">About Us</li>
       <li class="text2" style="width: 68%;">Store Locations <span class="rounded-1 text-light p-1" style="font-size: 10px; background-color: rgb(113, 107, 107);">Featured</span></li>
@@ -393,13 +407,13 @@
       <li class="text2" style="width: 15%;">FAQ’s</li>
       <li class="text2" style="width: 22%;">Careers</li>
     </ul>
-    <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+    <ul class="col d-flex flex-column list-unstyled " style="line-height: 40px; color: rgb(113, 107, 107);">
       <h1 class="text fw-lighter mt-5" style="font-size: 20px;">LOOKBOOK</h1>
       <li class="text2" style="width: 30%;">List <span class="rounded-1 text-light p-1" style="font-size: 10px; background-color: rgb(113, 107, 107);">Default</span></li>
       <li class="text2" style="width: 15%;">Grid</li>
       <li class="text2" style="width: 24%;">Masonry</li>
     </ul>
-    <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+    <ul class="col d-flex flex-column list-unstyled " style="line-height: 40px; color: rgb(113, 107, 107);">
       <h1 class="text fw-lighter mt-5" style="font-size: 20px;">LOOKBOOK SINGLE</h1>
       <li class="text2" style="width: 70%;">Parallax Header <span class="bg-black rounded-1 text-light p-1" style="font-size: 10px;">Featured</span></li>
       <li class="text2" style="width: 50%;">Featured Slider</li>
@@ -409,10 +423,10 @@
       <li class="text2" style="width: 70%;">Natural Colors <span class="rounded-1 text-light p-1" style="font-size: 10px; background-color: rgb(113, 107, 107);">Page Builder</span></li>
     </ul>
 
-   <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+   <ul class="col d-flex flex-column list-unstyled " style="line-height: 40px; color: rgb(113, 107, 107);">
       </ul>
     
-    <ul class="col d-flex flex-column">
+    <ul class="col d-flex flex-column list-unstyled">
       <!-- <li></li> -->
     </ul>
     
@@ -427,7 +441,7 @@
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body d-flex">
-    <ul class="col d-flex flex-column" style="line-height: 40px; color: rgb(113, 107, 107);">
+    <ul class="col d-flex flex-column list-unstyled" style="line-height: 40px; color: rgb(113, 107, 107);">
       <h1 class="text fw-lighter mt-5" style="font-size: 20px;">LISTING</h1>
       <li class="text2" style="width: 40%;">Classic <span class="rounded-1 text-light p-1" style="font-size: 10px; background-color: rgb(113, 107, 107);">Default</span></li>
       <li class="text2" style="width: 20%;">Overlay</li>
@@ -437,7 +451,7 @@
       <li class="text2" style="width: 15%;">List</li>
       <li class="text2" style="width: 45%;">Blog + Sidebar</li>
     </ul>
-    <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+    <ul class="col d-flex flex-column list-unstyled " style="line-height: 40px; color: rgb(113, 107, 107);">
       <h1 class="text fw-lighter mt-5" style="font-size: 20px;">SINGLE POST</h1>
       <li class="text2" style="width: 50%;">Display Featured</li>
       <li class="text2" style="width: 75%;">Featured Parallax <span class="bg-black rounded-1 text-light p-1" style="font-size: 10px;">Featured</span></li>
@@ -445,17 +459,17 @@
       <li class="text2" style="width: 45%;">Featured Video</li>
       <li class="text2" style="width: 40%;">No Featured</li>
     </ul>
-    <ul class="col d-flex flex-column " style="line-height: 40px; color: rgb(113, 107, 107);">
+    <ul class="col d-flex flex-column list-unstyled " style="line-height: 40px; color: rgb(113, 107, 107);">
       <h1 class="text fw-lighter mt-5" style="font-size: 20px;">NAVIGATION</h1>
       <li class="text2" style="width: 20%;">Simple</li>
       <li class="text2" style="width: 55%;">Image Background</li>
     </ul>
 
-   <ul class="col d-flex flex-column">
+   <ul class="col d-flex flex-column list-unstyled">
      
   </ul>
     
-    <ul class="col d-flex flex-column">
+    <ul class="col d-flex flex-column list-unstyled">
       <!-- <li></li> -->
     </ul>
     
@@ -503,37 +517,40 @@
 <!-- Carosel Container -->
     <section>
 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner image2" style="height: 70vh;">
+  <div class="carousel-inner image2 mb-5">
     <div class="carousel-item active" data-bs-interval="4000">
-      <img src="/asset/pexels-wilson-vitorino-2076966 2.jpg" class="d-block w-100 img-fluid" alt="...">
+      <img src="/asset/pexels-wilson-vitorino-2076966 2.jpg" class="d-block w-100 img-fluid"  alt="...">
        <div class="carousel-caption d-flex align-text-top d-none d-md-block butn">
         <p class="mt-5" style="margin-right: 57em; width: 15%; border-radius: 5px; background: none; border: none; color: rgb(192, 185, 185); background-color: rgb(50, 28, 28);">Spring/Summer'19</p>
         <h5 style="margin-bottom: rem; margin-right: 50em; font-size: 90px; color: rgb(36, 17, 17);">Paris Fabric</h5>
-       <button class="p-2 rounded-1" style="margin-bottom: 10rem; margin-right: 57em; background: none; border: none; color: rgb(192, 185, 185); background-color: rgb(50, 28, 28);">Shop Now</button>
+       <button class="p-2 rounded-1" style="margin-bottom: 10rem; margin-right: 57em; width: 100px; background: none; border: none; color: rgb(192, 185, 185); background-color: rgb(50, 28, 28);">Shop Now</button>
       </div>
     </div>
+
     <div class="carousel-item" data-bs-interval="4000">
       <img src="/asset/pexels-the-lazy-artist-gallery-1300550.jpg" class="d-block w-100 img-fluid" alt="...">
      <div class="carousel-caption d-flex align-text-top d-none d-md-block text-black butn">
       <p class="mt-5" style="margin-right: 57em; width: 8%; border-radius: 5px; background: none; border: none; color: rgb(192, 185, 185); background-color: rgb(50, 28, 28);">Winter'19</p>
        <h5 style=" margin-right: 50em; font-size: 90px; color: rgb(0, 0, 0);">Men Suits</h5>
-       <button class="p-2 rounded-1" style="margin-bottom: 10rem; margin-right: 57em; background: none; border: none; color: rgb(192, 185, 185); background-color: rgb(50, 28, 28);">Shop Now</button>
+       <button class="p-2 rounded-1" style="margin-bottom: 10rem; margin-right: 57em; width: 100px; background: none; border: none; color: rgb(192, 185, 185); background-color: rgb(50, 28, 28);">Shop Now</button>
       </div>
     </div>
+
     <div class="carousel-item" data-bs-interval="4000">
       <img src="/asset/pexels-dids-1424537.jpg" class="d-block w-100 img-fluid" alt="...">
        <div class="carousel-caption d-flex align-text-top d-none d-md-block text-black butn">
         <p class="mt-5" style="margin-right: 57em; width: 8%; border-radius: 5px; background: none; border: none; color: rgb(192, 185, 185); background-color: rgb(50, 28, 28);">summer'19</p>
        <h5 style=" margin-right: 50em; font-size: 90px; color: rgb(0, 0, 0);">Shoes</h5>
-       <button class="p-2 rounded-1" style="margin-bottom: 13rem; margin-right: 57em; background: none; border: none; color: rgb(192, 185, 185); background-color: rgb(50, 28, 28);">Shop Now</button>
+       <button class="p-2 rounded-1" style="margin-bottom: 13rem; margin-right: 57em; width: 100px; background: none; border: none; color: rgb(192, 185, 185); background-color: rgb(50, 28, 28);">Shop Now</button>
       </div>
     </div>
+
     <div class="carousel-item" data-bs-interval="4000">
       <img src="/Asset/pexels-lumn-167686 2.jpg" class="d-block w-100 img-fluid" alt="...">
        <div class="carousel-caption d-flex align-text-top d-none d-md-block text-black butn">
         <p class="mt-5" style="margin-left: 57em; width: 8%; border-radius: 5px; background: none; border: none; color: rgb(192, 185, 185); background-color: rgb(50, 28, 28);">50% off</p>
        <h5 style=" margin-left: 6em; font-size: 90px; color: rgb(36, 17, 17);">Accessories</h5>
-       <button class="p-2 rounded-1" style="margin-bottom: 13rem; margin-left: 57em; background: none; border: none; color: rgb(192, 185, 185); background-color: rgb(50, 28, 28);">Shop Now</button>
+       <button class="p-2 rounded-1" style="margin-bottom: 13rem; margin-left: 55em; width: 100px; background: none; border: none; color: rgb(192, 185, 185); background-color: rgb(50, 28, 28);">Shop Now</button>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
@@ -585,6 +602,361 @@
   </div>
 </div>
 </div>
+</section>
+
+<!-- New product showcase2 -->
+
+<section>
+<div class="col border-top w-100 p-5 d-flex flex-column text-dark" style="margin-bottom: -150px;">
+<div class="container mt-5">
+  
+  <div class="col w-100 d-flex flex-column justify-content-center align-content-center align-items-center">
+    <h1 class="fw-light">Best Selling</h1>
+    <p class="w-50 text-center fw-lighter">Bushwick blue bottle photo booth copper mug marfa craft beer pour-over swag subway tile organic cloud bread.</p>
+  </div>
+  <div class="col h-100 p-5 d-lg-flex d-md-block">
+
+  <div class="col me-5">
+    <div class=" bg-image hover-overlay h-50">
+  <img src="/Asset/WWDJAPAN.jpeg" class="w-100 h-100"  />
+  
+  <div
+    class="mask"
+    style="
+      background: url(/Asset/zzz.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+  <div>
+    <div class="col w-100 mt-4 d-flex flex-column align-items-end">
+  <div class="col-1 overlayIcon me-3 mb-2"> 
+    <button class="w-100 px-3 py-1 d-flex justify-content-center rounded-9 border-0"><i class="bi bi-heart"></i></button>
+  </div>
+  <div class="col-1 overlayIcon me-3 mb-2">
+    <button class="w-100 px-3 py-1 d-flex justify-content-center rounded-9 border-0"><i class="bi bi-bag"></i></button>
+  </div>
+  <div class="col-1 overlayIcon  me-3">
+    <button class="w-100 px-3 py-1 d-flex justify-content-center rounded-9 border-0"><i class="bi bi-arrows-angle-expand"></i></button>
+  </div>
+</div> 
+  </div>
+  </div>
+  </div>
+  <div class="col lh-1" style="font-family: 'Open Sans', sans-serif;">
+  <h3 class="fw-medium mt-2 fs-6">WWDJAPAN</h3>
+  <p class="fw-lighter">$700</p>
+</div>
+  </div>
+
+  
+<div class="col me-5">
+  <div class=" bg-image hover-overlay h-50">
+  <img src="/Asset/Prada Leather Lace Up Derby Shoes Black.jpeg" class="w-100 h-auto" />
+  <div
+    class="mask"
+    style="
+      background: url(/Asset/_.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+    <div class="col w-100 mt-4 d-flex flex-column align-items-end">
+  <div class="col-1 overlayIcon me-3 mb-2"> 
+    <button class="w-100 px-3 py-1 d-flex justify-content-center rounded-9 border-0"><i class="bi bi-heart"></i></button>
+  </div>
+  <div class="col-1 overlayIcon me-3 mb-2">
+    <button class="w-100 px-3 py-1 d-flex justify-content-center rounded-9 border-0"><i class="bi bi-bag"></i></button>
+  </div>
+  <div class="col-1 overlayIcon  me-3">
+    <button class="w-100 px-3 py-1 d-flex justify-content-center rounded-9 border-0"><i class="bi bi-arrows-angle-expand"></i></button>
+  </div>
+  </div>
+</div>
+  </div>
+
+  <div class="col lh-1" style="font-family: 'Open Sans', sans-serif;">
+  <h3 class="fw-medium mt-2 fs-6">Prada Leather</h3>
+  <p class="fw-lighter">$1500</p>
+</div>
+  </div>
+
+
+
+  <div class="col me-5">
+    <div class="bg-image hover-overlay h-50">
+  <img src="/Asset/puma-lqd-cell-optic-christian-combs-04.avif" class="w-100"/>
+  <div
+    class="mask"
+    style="
+      background: url(/Asset/cell-optic-christian-combs-02.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+<div>
+    <div class="col w-100 mt-4 d-flex flex-column align-items-end">
+  <div class="col-1 overlayIcon me-3 mb-2"> 
+    <button class="w-100 px-3 py-1 d-flex justify-content-center rounded-9 border-0"><i class="bi bi-heart"></i></button>
+  </div>
+  <div class="col-1 overlayIcon me-3 mb-2">
+    <button class="w-100 px-3 py-1 d-flex justify-content-center rounded-9 border-0"><i class="bi bi-bag"></i></button>
+  </div>
+  <div class="col-1 overlayIcon  me-3">
+    <button class="w-100 px-3 py-1 d-flex justify-content-center rounded-9 border-0"><i class="bi bi-arrows-angle-expand"></i></button>
+  </div>
+</div> 
+  </div>
+</div>
+</div>
+<div class="col lh-1" style="font-family: 'Open Sans', sans-serif;">
+  <h3 class="fw-medium mt-2 fs-6">Christian Combs</h3>
+  <p class="fw-lighter">$1200</p>
+</div>
+  </div>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- reveiw showcase3 -->
+<section>
+<div class="col d-block border p-5" style="background: rgba(183, 170, 146, 0.495);">
+
+<div class="col d-flex justify-content-center align-content-center">
+  <h1 class="fw-light  ext-dark">Testimonials</h1>
+</div>
+
+<div class="col d-flex justify-content-center text-dark">
+<div class="carousel slide w-50" id="carouselIndicator" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-indicators mt-5">
+      <button type="button" data-bs-target="#carouselIndicator" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselIndicator" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+
+    <div class="carousel-item active p-5">
+      <p class="text-center">This suit exudes sophistication. The classic design with subtle modern touches makes it versatile for a range of occasions. I've received numerous compliments on its elegant and timeless look. </p>
+      <div class="d-flex justify-content-center">
+      <img src="/Asset/🥀babygirl (@saron_yemam) • Instagram photos and videos.jpeg" class="d-block img-thumbnail" style="width: 100px; border-radius: 10rem;" alt="...">
+      <div class="d-flex flex-column justify-content-center ms-3 " style="line-height: 4px;">
+      <p>Muiz Owolabi</p>
+      <p class="fw-lighter">Developer</p>
+      </div>
+    </div>
+    </div>
+    
+     <div class="carousel-item p-5">
+      <p class="text-center">The materials used in the streetwear pieces are top-notch. I was particularly impressed with the attention to detail, which is often overlooked in this genre. Stitching and fabric choices reflect a commitment to durability.
+      <div class="d-flex justify-content-center">
+      <img src="/Asset/MR DT (@MrDtAFC) _ Twitter.jpeg" class="d-block img-thumbnail" style="width: 100px; border-radius: 5rem;" alt="...">
+      <div class="d-flex flex-column justify-content-center ms-3 " style="line-height: 4px;">
+      <p>Victor Adeyemi</p>
+      <p class="fw-lighter">Developer</p>
+      </div>
+    </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Outfit trending showcase4 -->
+
+<section>
+<div class="col w-100 d-flex flex-column text-dark" style="margin-top: 6rem;">
+<div class="container">
+  
+  <div class="col w-100 d-flex flex-column justify-content-center align-content-center align-items-center">
+    <h1 class="fw-light">Trending Outfits</h1>
+    <p class="w-50 text-center fw-lighter">Intelligentsia migas next level 90s woke ramps. Tumeric Glossier vape celiac tumeric keffiyeh.</p>
+  </div>
+  <div class="col h-100 p-5 d-lg-flex d-md-block">
+
+  <div class="col bg-image hover-overlay me-5">
+  <img src="/Asset/WWDJAPAN.jpeg" class="w-100 h-100"  />
+  
+  <div
+    class="mask"
+    style="
+      background: url(/Asset/zzz.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+ <div class="col w-100  d-flex justify-content-center" style="margin-top: 16rem;">
+  <div class="col-1 w-25 py-4 overlayIcon2 "> 
+    <button class=" bg-light w-100 fs-4 border-0 rounded-end-0 rounded-start-1 py-2 border-end"><i class="bi bi-heart"></i></button>
+  </div>
+  <div class="col-1  w-25 py-4 overlayIcon2">
+    <button class="bg-light w-100 fs-4 border-0 rounded-0 py-2"><i class="bi bi-bag"></i></button>
+  </div>
+  <div class="col-1 w-25 py-4 overlayIcon2 ">
+    <button class="bg-light w-100 border-0 rounded-start-0 rounded-end-1 py-2 border-start"><i class="bi bi-arrows-angle-expand fs-4"></i></button>
+  </div>
+</div>
+  </div>
+  </div>
+  
+<div class="col bg-image hover-overlay me-5">
+  <img src="/Asset/Prada Leather Lace Up Derby Shoes Black.jpeg" class="w-100 h-100"  />
+  <div
+    class="mask"
+    style="
+      background: url(/Asset/_.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+ <div class="col w-100  d-flex justify-content-center" style="margin-top: 16rem;">
+  <div class="col-1 w-25 py-4 overlayIcon2 "> 
+    <button class=" bg-light w-100 fs-4 border-0 rounded-end-0 rounded-start-1 py-2 border-end"><i class="bi bi-heart"></i></button>
+  </div>
+  <div class="col-1  w-25 py-4 overlayIcon2">
+    <button class="bg-light w-100 fs-4 border-0 rounded-0 py-2"><i class="bi bi-bag"></i></button>
+  </div>
+  <div class="col-1 w-25 py-4 overlayIcon2 ">
+    <button class="bg-light w-100 border-0 rounded-start-0 rounded-end-1 py-2 border-start"><i class="bi bi-arrows-angle-expand fs-4"></i></button>
+  </div>
+</div>
+
+</div>
+  </div>
+
+  <div class="col bg-image hover-overlay me-5">
+  <img src="/Asset/puma-lqd-cell-optic-christian-combs-04.avif" class="w-100 h-100"  />
+  <div
+    class="mask"
+    style="
+      background: url(/Asset/cell-optic-christian-combs-02.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+ <div class="col w-100  d-flex justify-content-center" style="margin-top: 16rem;">
+  <div class="col-1 w-25 py-4 overlayIcon2 "> 
+    <button class=" bg-light w-100 fs-4 border-0 rounded-end-0 rounded-start-1 py-2 border-end"><i class="bi bi-heart"></i></button>
+  </div>
+  <div class="col-1  w-25 py-4 overlayIcon2">
+    <button class="bg-light w-100 fs-4 border-0 rounded-0 py-2"><i class="bi bi-bag"></i></button>
+  </div>
+  <div class="col-1 w-25 py-4 overlayIcon2 ">
+    <button class="bg-light w-100 border-0 rounded-start-0 rounded-end-1 py-2 border-start"><i class="bi bi-arrows-angle-expand fs-4"></i></button>
+  </div>
+</div>
+</div>
+  </div>
+
+   <div class="col bg-image hover-overlay me-5">
+  <img src="/Asset/fff.jpeg" class="w-100 h-100"  />
+  
+  <div
+    class="mask"
+    style="
+      background: url(/Asset/Fashionable\ Must-Have\ Pieces\ for\ Aesthetic\ Fall\ Outfits_\ -\ the\ artist\ stop.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+<div class="col w-100 d-flex flex-column">
+  <div>
+  <p class="bg-light ms-2 mt-2 rounded-3 px-1 text-danger d-flex justify-content-center" style="width: 50px;">-25%</p>
+  </div>
+   <div class="col w-100 d-flex justify-content-center" style="margin-top: 13rem;">
+  <div class="col-1 w-25 py-4 overlayIcon2 "> 
+    <button class=" bg-light w-100 fs-4 border-0 rounded-end-0 rounded-start-1 py-2 border-end"><i class="bi bi-heart"></i></button>
+  </div>
+  <div class="col-1  w-25 py-4 overlayIcon2">
+    <button class="bg-light w-100 fs-4 border-0 rounded-0 py-2"><i class="bi bi-bag"></i></button>
+  </div>
+  <div class="col-1 w-25 py-4 overlayIcon2 ">
+    <button class="bg-light w-100 border-0 rounded-start-0 rounded-end-1 py-2 border-start"><i class="bi bi-arrows-angle-expand fs-4"></i></button>
+  </div>
+</div>
+</div>
+  </div>
+
+
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- Visit Us -->
+<section>
+<div class="col border-top border-bottom mt-5 p-5 d-flex flex-column justify-content-center text-dark">
+
+
+<div class="col d-flex flex-column text-center">
+
+  <h1 class="fw-light">Visit Us</h1>
+  <p class="fw-lighter">Stop by our stores to learn the stories behind our products, get a personal <br/> styling session, or shop the latest in person. See our store locations.</p>
+
+</div>
+<div class="col d-flex flex-column mt-4 align-items-center">
+
+<img src="/Asset/boutique-2048x1088.jpg.webp" class="w-75" alt="">
+
+</div>
+
+
+</div>
+</section>
+
+<!-- footer -->
+
+<section>
+
+<div class="col d-flex flex-column  mt-5">
+<div class="container">
+<div class="col d-lg-flex d-md-block border">
+  <div class="d-flex">
+<ul class="col d-block list-unstyled">
+<h4>COMPANY</h4>
+<li class="text2">About Us</li>
+<li class="text2">Contact</li>
+<li class="text2">Store Locations</li>
+<li class="text2">Careers</li>
+</ul>
+
+<ul class="col list-unstyled">
+<h4>COMPANY</h4>
+<li class="text2">About Us</li>
+<li class="text2">Contact</li>
+<li class="text2">Store Locations</li>
+<li class="text2">Careers</li>
+</ul>
+</div>
+<div class="d-flex">
+<ul class="col list-unstyled">
+<h4>COMPANY</h4>
+<li>About Us</li>
+<li>Contact</li>
+<li>Store Locations</li>
+<li>Careers</li>
+</ul>
+
+<ul class="col list-unstyled">
+<h4>COMPANY</h4>
+<li>About Us</li>
+<li>Contact</li>
+<li>Store Locations</li>
+<li>Careers</li>
+</ul>
+</div>
+</div>
+
+
+</div>
+</div>
+
 </section>
 
   </body>
